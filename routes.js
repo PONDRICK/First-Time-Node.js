@@ -37,4 +37,6 @@ const requestHandler = (request, response) => {
   response.end();
 };
 
-module.exports = requestHandler;
+// module.exports = requestHandler;
+exports.handler = requestHandler;
+exports.sometxt = "Msg from routes";
